@@ -22,16 +22,22 @@
     </div>
 
     <!-- Sidebar -->
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="margin-top: 33px;" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="margin-top: 33px;"
+        id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
             <i class="fa fa-remove"></i>
         </a>
         <h4 class="w3-bar-item"><b>Menu</b></h4>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">What is hearing?</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">What is active listening?</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#hearing">What is hearing?</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#listening">What is active listening?</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#quiz">Quiz: What do you listen with?</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#symbol">Thought Experiment</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">Why it Matters</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">How to?</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">Confirmation</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">Conclusion</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">Citations</a>
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -41,53 +47,136 @@
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="w3-main" style="margin-left:250px;">
 
-        <div class="w3-row" style="padding-top: 70px;" >
-            <div class="w3-half w3-container">
-                <h1 class="w3-text-deep-orange">What is hearing?</h1>
-                <p>Hearing is a biological phenomenon where sound enters our ears and is perceived as sound. We don’t have to put any effort into hearing. 
+        <div class="w3-row" style="padding-top: 70px;">
+            <h1 class="w3-text-deep-orange w3-container" style="font-weight: bold;">Hearing vs. Active Listening</h1>
+        </div>
+
+
+        <div class="w3-row" id="hearing">
+            <div class="w3-half w3-container" >
+                <h1 class="w3-text-orange">What is hearing?</h1>
+                <p>Hearing is a biological phenomenon where sound enters our ears and is perceived as sound. We don’t
+                    have to put any effort into hearing.
                 </p>
             </div>
 
-            <div class="w3-half w3-container">
-                <h1 class="w3-text-teal">What is active listening?</h1>
-                <p>Listening is a physiological phenomenon involving our whole selves. We listen through our ears and also eyes. We need to put our mind into listening - where we put meaning to the sounds we hear.</p>
-                <p></p>Active listening goes a step beyond this - where we listen with intent. Our minds need to make an effort to be attentive; understanding what the other is saying and going below the surface of what is initially present. 
-                    </p>
+            <div class="w3-half w3-container" id="listening">
+                <h1 class="w3-text-orange">What is active listening?</h1>
+                <p>Listening is a physiological phenomenon involving our whole selves. We listen through our <i>ears</i>
+                    and
+                    also <i>eyes</i>. We need to put our <i>mind</i> into listening - where we put meaning to the sounds
+                    we hear.</p>
+                <p></p>Active listening goes a step beyond this - where we listen with intent. Our minds need to make an
+                effort to be attentive; understanding what the other is saying and going below the surface of what is
+                initially present.
+                </p>
             </div>
         </div>
 
-        <div class="w3-row">
-           
-            <div class="w3-half w3-container">
-                <h1 class="w3-text-teal">Symbolism</h1>
-                <p>Passively listening is like observing a house from the street. While we can admire the beautiful architecture of the house from the outside, we will miss the beauty of the inside of the house. We can’t discover the different rooms of the house.</p>
-                <p>In conversations, active listening allows us to unlock the doors and walk through the rooms discovering new context and diving deeper into the conversation. (Credit: Hrishikesh Hirway, TED Talk gives this symbolism).</p>
+        <hr>
+
+        <div class="w3-row w3-center" id="quiz">
+            <div class="w3-container" >
+                <h1 class="w3-text-orange">What do you listen with?</h1>
+                <p>(you may need to be at 100% for this to display correctly)</p>
+                <div class="test" style="max-width: 75%;">
+                    <img src="./images/person.jpg" style="max-width: inherit;">
+                    <div class="eyes">
+                        <input id="eyes" placeholder="enter here">
+                    </div>
+                    <div class="mind">
+                        <input id="mind" placeholder="enter here">
+                    </div>
+                    <div class="ears">
+                        <input id="ears" placeholder="enter here">
+                    </div>
+                    <div class="mouth">
+                        <p>Less of this:</p>
+                        <input id="mouth" placeholder="enter here">
+                    </div>
                 </div>
+                <div>
+                    <button id="peoplecheckAnswers" onclick="checkAnswers()">Check Answers</button>
+                    <p id="Congrats"></p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="w3-row">
+
+            <div class="w3-half w3-container" id="symbol">
+                <h1 class="w3-text-orange">Thought Experiment</h1>
+                <p>Passively listening is like observing a house from the street. While we can admire the beautiful
+                    architecture of the house from the outside, we will miss the beauty of the inside of the house. We
+                    can’t discover the different rooms of the house.</p>
+                <p>In conversations, active listening allows us to unlock the doors and walk through the rooms
+                    discovering new context and diving deeper into the conversation. (Credit: Hrishikesh Hirway, TED
+                    Talk gives this symbolism).</p>
+            </div>
 
             <div class="w3-half w3-container">
                 <div id="cf">
-                    whatisthisnotworkinghelpwhatisthisnotworkinghelpwhatisthisnotworkinghelp
+                    whatisthisnotworkinghelpwhatisthisnotworkinghelpwhatisthisnotworkinghelp<!--janky HTML-->
                     <img class="bottom" src="./images/Houseinner1024_1.jpg" />
                     <img class="top" src="./images/House1024_1.jpg" />
                 </div>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <div><i>Figure 1-2:</i> Hover over the image. Having active learning skiils allows us to learn details we didn't know before.</div>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> <!--janky HTML-->
+                <div><i>Figure 1-2:</i> Hover over the image, having active learning skiils allows us to learn details
+                    we didn't know before.</div>
             </div>
 
+        </div>
+
+        <hr>
+        <hr>
+
+        <div class="w3-row" >
+            <h1 class="w3-text-deep-purple w3-container" style="font-weight: bold;">Why it Matters</h1>
         </div>
 
         <div class="w3-row">
-            <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Heading</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat.</p>
+            <div class="w3-half w3-container" >
+                <h1 class="w3-text-purple">As People</h1>
+            </div>
+
+            <div class="w3-half w3-container" id="listening">
+                <h1 class="w3-text-purple">As Tutors</h1>
+                </p>
             </div>
 
         </div>
+
+        <hr>
+        <hr>
+
+        <div class="w3-row" >
+            <h1 class="w3-text-indigo w3-container" style="font-weight: bold;">How to?</h1>
+        </div>
+
+        <hr>
+        <hr>
+
+        <div class="w3-row" >
+            <h1 class="w3-text-light-green w3-container" style="font-weight: bold;">Confirmation</h1>
+        </div>
+
+        <hr>
+        <hr>
+
+        <div class="w3-row" >
+            <h1 class="w3-text-red w3-container" style="font-weight: bold;">Conclusion</h1>
+        </div>
+
+        <hr>
+        <hr>
+
+        <div class="w3-row" >
+            <h1 class="w3-text-deep-black w3-container" style="font-weight: bold;">Citations</h1>
+        </div>
+
+
 
         <footer id="myFooter">
             <div class="w3-container w3-theme-l2 w3-padding-32">

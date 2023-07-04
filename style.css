@@ -35,3 +35,40 @@ h6 {
 #cf img.top:hover {
   opacity:0;
 }
+
+/* Container holding the image and the text */
+.test {
+  position: relative;
+}
+
+.eyes {
+  position: absolute;
+  bottom: 335px;
+  right: 350px;
+  background-color: black;
+  color: white;
+}
+
+.ears {
+  position: absolute;
+  bottom: 335px;
+  right: 100px;
+  background-color: black;
+  color: white;
+}
+
+.mind {
+  position: absolute;
+  bottom: 375px;
+  right: 180px;
+  background-color: black;
+  color: white;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 235px;
+  right: 50px;
+  background-color: transparent;
+  color: black;
+}
