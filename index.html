@@ -33,11 +33,11 @@
         <a class="w3-bar-item w3-button w3-hover-black" href="#listening">What is active listening?</a>
         <a class="w3-bar-item w3-button w3-hover-black" href="#quiz">Quiz: What do you listen with?</a>
         <a class="w3-bar-item w3-button w3-hover-black" href="#symbol">Thought Experiment</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">Why it Matters</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">How to?</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">Confirmation</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">Conclusion</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">Citations</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#why">Why it Matters</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#how">How to?</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#confirmation">Confirmation</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#conclusion">Conclusion</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#citations">Citations</a>
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -53,7 +53,7 @@
 
 
         <div class="w3-row" id="hearing">
-            <div class="w3-half w3-container" >
+            <div class="w3-half w3-container">
                 <h1 class="w3-text-orange">What is hearing?</h1>
                 <p>Hearing is a biological phenomenon where sound enters our ears and is perceived as sound. We don’t
                     have to put any effort into hearing.
@@ -76,7 +76,7 @@
         <hr>
 
         <div class="w3-row w3-center" id="quiz">
-            <div class="w3-container" >
+            <div class="w3-container">
                 <h1 class="w3-text-orange">What do you listen with?</h1>
                 <p>(you may need to be at 100% for this to display correctly)</p>
                 <div class="test" style="max-width: 75%;">
@@ -96,7 +96,8 @@
                     </div>
                 </div>
                 <div>
-                    <button id="peoplecheckAnswers" onclick="checkAnswers()">Check Answers</button>
+                    <button id="peoplecheckAnswers" class="w3-button w3-purple" onclick="checkAnswers()">Check
+                        Answers</button>
                     <p id="Congrats"></p>
                 </div>
             </div>
@@ -112,7 +113,7 @@
                     architecture of the house from the outside, we will miss the beauty of the inside of the house. We
                     can’t discover the different rooms of the house.</p>
                 <p>In conversations, active listening allows us to unlock the doors and walk through the rooms
-                    discovering new context and diving deeper into the conversation. (Credit: Hrishikesh Hirway, TED
+                    discovering new context and diving deeper into the conversation. (Credit: Hrishikesh Hirway, TED's
                     Talk gives this symbolism).</p>
             </div>
 
@@ -123,7 +124,8 @@
                     <img class="top" src="./images/House1024_1.jpg" />
                 </div>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> <!--janky HTML-->
-                <div><i>Figure 1-2:</i> Hover over the image, having active learning skiils allows us to learn details
+                <div>Hover over (or tap) the image, having active learning skiils allows us to learn
+                    details
                     we didn't know before.</div>
             </div>
 
@@ -132,18 +134,44 @@
         <hr>
         <hr>
 
-        <div class="w3-row" >
+        <div class="w3-row" id="why">
             <h1 class="w3-text-deep-purple w3-container" style="font-weight: bold;">Why it Matters</h1>
         </div>
 
         <div class="w3-row">
-            <div class="w3-half w3-container" >
+            <div class="w3-half w3-container">
                 <h1 class="w3-text-purple">As People</h1>
+                <p> As humans we want to, we need to be listened to. As Kate Murphy discusses in “You're Not Listening:
+                    What You're Missing and Why It Matters”, she describes how not being listened to causes loneliness.
+                    Loneliness is described as a public health crisis. Both listening and having someone that listens
+                    are important for mental health. For ours and those we love.</p>
+
+                <p>As Murphy puts it only through listening, “engage, understand, connect, empathize as human beings”
+                    (Murphy 2). No relationship will work without listening - we have two years and one month for a
+                    reason.</p>
+
+                <p>Moreover, miscommunication has disastrous consequences - fatal consequences. Wars have been fought
+                    over for a lack of listening. As an example: disasters like those of United Airlines 173 demonstrate
+                    the consequences of not listening.</p>
+
+                <p>The airplane had a landing gear issue that the captain, the person responsible for making final
+                    decisions, became fixated on. The fixation caused the airplane to run out of fuel. Accident
+                    investigators cited that the captain failed to “properly respond to [..] the crewmember’s advisories
+                    regarding fuel state” (NTSB 5). Not listening costs lives, that’s why listening matters.
+                </p>
             </div>
 
             <div class="w3-half w3-container" id="listening">
                 <h1 class="w3-text-purple">As Tutors</h1>
-                </p>
+                <p>As tutors, our listening skills aren't necessarily “life saving”. Yet - despite this being able to
+                    listen to others is still critical to the success of our students. With active listening skills we
+                    may be able to help students identify the problem they need help with. Sometimes, there may be other
+                    issues like poor studying skills, that are contributing to their struggles. Knowing this can help us
+                    as tutors know how we can help our students develop further independence.</p>
+
+                <p>Kate Murphy mentions how some conversations that had active listening allowed her interviewees to
+                    notice stuff they haven’t before. Our active listening skills can help our students experience the
+                    same - and allow themselves to reflect and improve as students, independently.</p>
             </div>
 
         </div>
@@ -151,36 +179,206 @@
         <hr>
         <hr>
 
-        <div class="w3-row" >
-            <h1 class="w3-text-indigo w3-container" style="font-weight: bold;">How to?</h1>
+        <div class="w3-row" id="how">
+            <div class="w3-container">
+                <ul class="w3-ul w3-card-4">
+                    <li>
+                        <h1 class="w3-text-indigo w3-container" style="font-weight: bold;">How to?</h1>
+                    </li>
+                    <li><b>Be open to new ideas -</b> When we listen we have to be open minded and be ready to learn
+                        something new. If our mind doesn't want to listen we aren’t active listeners. As tutors, we need
+                        open-mindedness to help us identify struggles our students have. </li>
+                    <li><b>Stop multitasking -</b> Physically we need to stop what we’re doing and listen. We need to
+                        make
+                        eye contact and listen. Within us, within our thoughts, we need to not multitask too. We can not
+                        fully appreciate what someone else says while thinking about something else. As tutors, we need
+                        to
+                        focus on the student when we’re listening to them. We don’t want to be thinking about our own
+                        work
+                        or other tutees. We also don’t want to be forming judgments as they speak. Our minds need to be
+                        fully occupied on what they say.</li>
+                    <li><b>Let the other person know you’re engaged without drawing focus on yourself -</b> relating
+                        from
+                        personal experiences aren’t a form of active listening. Physically we can nod to let the other
+                        person know we’re engaged. From training level 1, we learned that careful useful use of silence
+                        is
+                        also a skill. We make space for people and our tutees to think. But at other times, we may have
+                        to
+                        ask questions to engage and dig deeper. As tutors we can do the same to help our students build
+                        their independence by identifying the underlying struggles they have.</li>
+                    <li><b>Listen to non-verbal cues -</b> We want to listen to non-verbal cues like body language. We
+                        can
+                        use body language to identify how they feel.</li>
+                    <li><b>Paraphrase and summarize -</b> repeating what people say can indicate to the person we are
+                        listening to really understand what they said.</li>
+                    <li><b>Practice -</b> listening is a lifelong skill. We need to practice listening in order to be
+                        better
+                        at it.</li>
+                </ul>
+            </div>
         </div>
 
         <hr>
         <hr>
 
-        <div class="w3-row" >
-            <h1 class="w3-text-light-green w3-container" style="font-weight: bold;">Confirmation</h1>
+        <div class="w3-row" id="confirmation">
+            <div class="w3-container">
+                <h1 class="w3-text-light-green w3-container" style="font-weight: bold;">Confirmation</h1>
+                <p>Let’s take time to reflect on what active listening is. Act as if you are working with a student who
+                    had an assignment on active listening. Create questions based on Bloom’s Taxonomy that you could use
+                    to
+                    determine how well a student understands the terms, themes, and arguments presented. Answer them
+                    too. This question will not be graded, it is for your reflection. Please print out this section and
+                    upload to Classes. Sample questions have been provided.</p>
+                <table style="margin: 10px; border: 1px;" id="kms">
+                    <tr>
+                        <th>Level of Bloom’s Taxonomy</th>
+                        <th>Sample Questions</th>
+                        <th>Your Questions</th>
+                        <th>Sample Answers</th>
+                    </tr>
+                    <tr>
+                        <td><i>Remember</i> – recalling facts and basic concepts. “Define, duplicate, list, memorize”
+                        </td>
+                        <td>
+                            <ol>
+                                <li>What is hearing?</li>
+                                <li>What is listening?</li>
+                                <li>List ways to listen actively</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i>Understand</i> – explain the idea or concepts “describe, explain, select”</td>
+                        <td>
+                            <ol>
+                                <li>Explain why active listening is important</li>
+                                <li>Explain why today’s encouragement of “listening to our thoughts” is harmful.</li>
+                                <li>Describe the ways active listening can improve our role as tutors.</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i>Apply</i> – use information in new situations “solve, interpret, execute”</td>
+                        <td>
+                            <ol>
+                                <li>A friend is struggling with active listening, how can you help them?</li>
+                                <li>A professor isn’t a great listener, how should and why should they improve?</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i>Analyze</i> – draw connections among ideas “relate, compare, contrast”</td>
+                        <td>
+                            <ol>
+                                <li>Look into what “crew resource management” is, how does it relate to active
+                                    listening?</li>
+                                <li>Contrast an active listener to a good hearer.</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i>Evaluate</i> – justify a stand or decision “argue, defend”</td>
+                        <td>
+                            <ol>
+                                <li>Defend why active listening is important for emotional intelligence.</li>
+                                <li>Argue why John Gottman's argument against active listening is wrong.</li>
+                                <li>Argue why being a bad listener doesn’t necessarily make you a bad person. </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i>Create</i> – produce new or original work “design, develop, investigate”</td>
+                        <td>
+                            <ol>
+                                <li>Investigate more into how we as tutors can empower ourselves to become better
+                                    listeners.</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="35"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <hr>
         <hr>
 
-        <div class="w3-row" >
+        <div class="w3-row" id="conclusion">
             <h1 class="w3-text-red w3-container" style="font-weight: bold;">Conclusion</h1>
+            <div class="w3-container">
+                <p>Listening to others is both important for our role as tutors, and more so, our role as people. Let’s
+                    work together to listen carefully, listening with all of our body - for the people we love. </p>
+            </div>
         </div>
 
         <hr>
         <hr>
 
-        <div class="w3-row" >
+        <div class="w3-row" id="citations">
             <h1 class="w3-text-deep-black w3-container" style="font-weight: bold;">Citations</h1>
+            <ul>
+                <li>British Heart Foundation. 10 tips for active listening.
+                    https://www.bhf.org.uk/informationsupport/heart-matters-magazine/wellbeing/how-to-talk-about-health-problems/active-listening.
+                </li>
+                <li>Center for Effective Learning. How to Use Active Listening Skills to Coach Others.
+                    www.ccl.org/articles/leading-effectively-articles/coaching-others-use-active-listening-skills.</li>
+                <li>Hirway Hrishikesh. “What you discover when you really listen”. TedTalk, uploaded by TEDMonterey.
+                    https://www.ted.com/talks/hrishikesh_hirway_what_you_discover_when_you_really_listen.</li>
+                <li>National Transportation Safety Board (1979. June 7). AIRCRAFT ACCIDENT REPORT AAR7907.
+                    https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR7907.pdf.</li>
+                <li>Murphy Kate. You're Not Listening: What You're Missing and Why It Matters. New York, NY. January
+                    2020.</li>
+                <li>Patricia Mulvania, R. (2020, October 21). The importance of active listening. Gift of Life Institute
+                    is a division of Gift of Life Transplant Foundation.
+                    https://www.giftoflifeinstitute.org/the-importance-of-active-listening/.</li>
+                <li>PROFESSIONAL LEARNING BOARD LLC. Be a Listening Teacher.
+                    https://k12teacherstaffdevelopment.com/tlb/be-a-listening-teacher/.</li>
+                <li>University of the People. Hearing vs Listening – Mastering Communication.
+                    https://www.uopeople.edu/blog/hearing-vs-listening/.</li>
+            </ul>
         </div>
 
 
 
         <footer id="myFooter">
             <div class="w3-container w3-theme-l2 w3-padding-32">
-                <h4>Created by Kenji Okura for Learning Commons</h4>
+                <h4>Created by Kenji Okura for Learning Commons General Training 2.</h4>
             </div>
 
             <div class="w3-container w3-theme-l1">
